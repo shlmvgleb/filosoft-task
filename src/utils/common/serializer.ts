@@ -6,7 +6,7 @@ export class OutboundResponseIdentitySerializer implements Serializer {
 
   serialize(value: any): OutgoingResponse {
     this.logger.debug(
-      `-->> Serializing outbound response: \n${JSON.stringify(value)}`,
+      `Serializing outbound response: \n${JSON.stringify(value)}`,
     );
     return value;
   }

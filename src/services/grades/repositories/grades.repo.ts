@@ -37,11 +37,4 @@ export class GradesRepository {
       } satisfies Statistic;
     });
   }
-
-  async groupBy(params: Prisma.GradeGroupByArgs) {
-    // eslint-disable-next-line
-    // @ts-ignore 
-    // Prisma ts types bug
-    return this.prismaService.grade.groupBy(params);
-  }
 }

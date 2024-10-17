@@ -44,8 +44,4 @@ export class GradesService {
   async count(params?: Prisma.GradeCountArgs) {
     return this.gradesRepository.count(params);
   }
-
-  async groupBy(params: Prisma.GradeGroupByArgs) {
-    return this.gradesRepository.groupBy(params);
-  }
 }
