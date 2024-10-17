@@ -36,7 +36,7 @@ docker compose up -d --build
 |:----------------------------|:------------------------------------------------------------ |:------------------------     |
 | PORT                        | 8080                                                         | Service port                 |
 | POSTGRES_URL                | nats://192.162.246.63:4222                                   | NATS connection URL          |
-| POSTGRES_URL                | postgresql://postgres:root@postgres:5832/core?schema=public  | Postgres connection URL      |
+| POSTGRES_URL                | postgresql://postgres:root@postgres:5432/core?schema=public  | Postgres connection URL      |
 | POSTGRES_HOST               | localhost                                                    | Postgres host                |
 | POSTGRES_PORT               | 5432                                                         | Postgres port                |
 | POSTGRES_DB_NAME            | core                                                         | Postgres database name       |
