@@ -1,0 +1,10 @@
+model Student {
+  personalCode String   @id @map("personal_code") @db.VarChar(255)
+  name         String
+  lastName     String   @map("last_name")
+  grades       Grade[]
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("students")
+}
